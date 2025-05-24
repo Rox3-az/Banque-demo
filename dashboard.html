@@ -3,23 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tableau de bord - Banque BNI</title>
+  <title>Espace Client - Banque BNI</title>
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body>
-  <div class="dashboard-container">
-    <img src="https://www.bni.ci/wp-content/uploads/2021/11/logo-bni.svg" alt="Logo BNI" style="width: 120px; margin-bottom: 20px;">
-    <h1>Bienvenue Roxana Lopez</h1>
-    <h2>Solde : 2 000 000 €</h2>
-    
-    <h3>Transactions (2019)</h3>
-    <ul class="transactions">
-      <li>📅 12/01/2019 - +50 000 € (Virement)</li>
-      <li>📅 28/02/2019 - -5 000 € (Achat véhicule)</li>
-      <li>📅 10/04/2019 - +150 000 € (Salaire)</li>
-      <li>📅 22/07/2019 - -1 000 € (Courses)</li>
-      <li>📅 30/11/2019 - +200 000 € (Bonus)</li>
-    </ul>
-  </div>
+<body class="dashboard-body">
+  <header class="header">
+    <img src="https://www.bni.ci/wp-content/uploads/2021/11/logo-bni.svg" alt="Logo BNI" class="logo">
+    <nav>
+      <ul class="nav">
+        <li>Accueil</li>
+        <li>Mon solde</li>
+        <li>Historique</li>
+        <li>Déconnexion</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard-content">
+    <h1>Bienvenue, <span class="client-name">Roxana Lopez</span></h1>
+    <h2 class="solde">💰 Solde disponible : <strong>2 000 000 €</strong></h2>
+
+    <section class="transactions">
+      <h3>📑 Historique des transactions - Année 2019</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Description</th>
+            <th>Montant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>12/01/2019</td>
+            <td>Virement entrant</td>
+            <td class="credit">+50 000 €</td>
+          </tr>
+          <tr>
+            <td>28/02/2019</td>
+            <td>Achat véhicule</td>
+            <td class="debit">-5 000 €</td>
+          </tr>
+          <tr>
+            <td>10/04/2019</td>
+            <td>Salaire mensuel</td>
+            <td class="credit">+150 000 €</td>
+          </tr>
+          <tr>
+            <td>22/07/2019</td>
+            <td>Courses alimentaires</td>
+            <td class="debit">-1 000 €</td>
+          </tr>
+          <tr>
+            <td>30/11/2019</td>
+            <td>Prime annuelle</td>
+            <td class="credit">+200 000 €</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 </body>
 </html>
