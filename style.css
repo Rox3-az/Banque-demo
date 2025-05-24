@@ -1,11 +1,91 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+/* Reset général */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.login-container, .dashboard-container {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e8f0fc, #f5f9ff);
+  color: #333;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  color: white;
+  padding: 15px 30px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav li {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Dashboard */
+.dashboard-content {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 51, 102, 0.1);
+}
+
+.client-name {
+  color: #003366;
+}
+
+.solde {
+  font-size: 1.4rem;
+  margin: 20px 0 30px;
+  color: #2a7a2a;
+}
+
+/* Table Transactions */
+.transactions table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transactions th,
+.transactions td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.transactions th {
+  background-color: #f2f6fa;
+}
+
+.credit {
+  color: green;
+  font-weight: bold;
+}
+
+.debit {
+  color: red;
+  font-weight: bold;
+}
+
+/* Login */
+.login-container {
   width: 300px;
   margin: 100px auto;
   padding: 30px;
@@ -25,7 +105,7 @@ input {
 }
 
 button {
-  background-color: #0066cc;
+  background-color: #003366;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -34,12 +114,7 @@ button {
 }
 
 button:hover {
-  background-color: #004d99;
-}
-
-.transactions {
-  text-align: left;
-  margin-top: 20px;
+  background-color: #002244;
 }
 
 #error-message {
