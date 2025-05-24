@@ -1,11 +1,11 @@
 function login() {
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value.trim();
-  const errorMessage = document.getElementById("error-message");
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const error = document.getElementById("error-message");
 
-  if (email === "user@demo.com" && password === "1234") {
+  if (email === "roxana.lopez@bnivirtuelle.com" && password === "BNI@2025_Accès!") {
     window.location.href = "dashboard.html";
   } else {
-    errorMessage.textContent = "Email ou mot de passe incorrect";
+    error.textContent = "Identifiants incorrects. Veuillez réessayer.";
   }
 }
